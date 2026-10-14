@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Foco+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>foco+</h1>
+        <p>Seu espaço de estudos</p>
+    </header>
+    <section class="pagina ativa" id="pagina1">
+        <div class="login">
+            <h2>Entrar</h2>
+            <p>Que bom ter você de volta!</p>
+            <input type="text" placeholder="E-mail">
+            <input type="password" placeholder="Senha">
+            <a href="#">Esqueceu a senha?</a>
+            <button onclick="mostrarPagina(2)">Entrar</button>
+            <p>ou</p>
+            <button>Continuar com Google</button>
+            <button>Continuar com Apple</button>
+            <small>Não tem uma conta? Criar conta</small>
+        </div>
+    </section>
+    <section class="pagina" id="pagina2">
+        <div class="conteudo">
+            <h2>Quase lá! 🎉</h2>
+            <p>Para te ajudar melhor, conte pra gente:</p>
+            <h3>Qual é seu principal objetivo?</h3>
+            <button class="objetivo">Melhorar meu desempenho nos estudos</button>
+            <button class="objetivo">Organizar minha rotina e tarefas</button>
+            <button class="objetivo">Criar o hábito de estudar todos os dias</button>
+            <button class="objetivo">Outro objetivo</button>
+            <br>
+            <button class="principal" onclick="mostrarPagina(3)">
+                Continuar
+            </button>
+        </div>
+    </section>
+    <section class="pagina" id="pagina3">
+        <div class="conteudo">
+            <h2>Olá, estudante! 👋</h2>
+            <div class="informacoes">
+                <div>
+                    <b>2h 35min</b>
+                    <p>Tempo de estudo</p>
+                </div>
+                <div>
+                    <b>7 dias</b>
+                    <p>Sequência de foco</p>
+                </div>
+
+                <div>
+                    <b>5</b>
+                    <p>Tarefas concluídas</p>
+                </div>
+            </div>
+            <h3>Primeiras tarefas</h3>
+            <div class="tarefa">
+                Física - exercícios
+                <span>Hoje, 15:00</span>
+            </div>
+            <div class="tarefa">
+                História - resumo
+                <span>Hoje, 17:00</span>
+            </div>
+            <div class="tarefa">
+                Redação - rascunho
+                <span>Amanhã, 10:00</span>
+            </div>
+            <button class="principal" onclick="mostrarPagina(4)">
+                Continuar estudando
+            </button>
+        </div>
+    </section>
+    <section class="pagina" id="pagina4">
+        <div class="conteudo">
+            <h2>Continuar estudando</h2>
+            <div class="materia">
+                Matemática - função de 1º grau
+            </div>
+            <div class="materia">
+                História - Revolução Francesa
+            </div>
+            <div class="materia">
+                Biologia - células
+            </div>
+            <h3>Sons recomendados para você</h3>
+
+            <div class="sons">
+                <button onclick="tocar('Chuva 🌧️')">Chuva 🌧️</button>
+                <button onclick="tocar('Natureza 🌳')">Natureza 🌳</button>
+                <button onclick="tocar('Baleias 🐋')">Baleias 🐋</button>
+            </div>
+            <p id="som">Nenhum som selecionado.</p>
+            <button class="voltar" onclick="mostrarPagina(3)">
+                Voltar
+            </button>
+        </div>
+    </section>
+    <footer>
+        <p>foco+ | Projeto de Informática</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html
